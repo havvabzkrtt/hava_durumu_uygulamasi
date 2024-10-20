@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Uygulaması</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>HAVA DURUMU UYGULAMASI</h1>
+        
+        <form method="POST" action="/">
+            <label for="city">Şehir Giriniz:</label>
+            <input type="text" id="city" name="city" required>
+            <button type="submit">GİR</button>
+        </form>
+        
+        <div class="weather-info">
+            <h2><i class="fas fa-globe"></i> {{ sehir }} için Hava Durumu Bilgisi</h2>
+            <p><i class="fas fa-thermometer-half"></i> Sıcaklık: {{ sicaklik }}°C</p>
+            <p>
+                <i class="{{ icon }}"></i> Açıklama: {{ aciklama }}
+            </p>
+            <p>Güncelleme Tarihi: {{ tarih }}</p>
+        </div>
+    </div>
+</body>
+</html>
