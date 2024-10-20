@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-API_KEY = '0849d85a8a56d0f01458f8b3e8e2250d'
+API_KEY = '...'   # OpenWeatherMap web sitesinden alınan API KEY eklenmeli
 BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 
 def hava_durumu_getir(sehir):
